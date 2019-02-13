@@ -1,0 +1,41 @@
+Atividades
+Ler capitulo 1 livro didático OKAY
+Criar páginas e testar conceitos utilizando o navegador OKAY
+Converter texto em Json 
+Converter Json em Objeto JS
+Como "depurar" script JS?
+
+
+
+W3schools.com
+tutorialspoint.com
+
+
+Atividades capitulo 1
+
+1 - <script src="xxx.js"></scrip>
+2 - window.alert("Alô Mundo");
+3 - d) for (i = 0; i <= 5; i++)
+4 - a)if (i != 10)
+5 - Criado um arquivo.
+
+Converter texto em Json?
+nome: jeniffer
+idade:20 ----texto
+
+passar para json
+
+var identidade = '{"nome":jeniffer, "idade":20}';
+pronto json
+
+Converter Json em objeto js?
+
+obj = JSON.parse(identidade);
+
+console.log(obj.nome);//jeniffer
+console.log(obj.idade);//20
+
+Como depurar scripts js?
+Acredito que pelo f12
+
+
