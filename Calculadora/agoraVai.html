@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Calculadora
+	</title>
+	<style>
+	td{text-align:center;}
+	</style>
+	<script>
+		function add(a,b){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("resultado").value = parseInt(a)+parseInt(b);
+		 return a+b;
+		}
+		function sub(a,b){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("resultado").value = a-b;
+		 return a-b;
+		}
+		function div(a,b){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("resultado").value = a/b;
+		 return a/b;
+		}
+		function mult(a,b){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("resultado").value = a*b;
+		 return a*b;
+		}
+		function limpa(){
+		document.getElementById("a").value = '';
+		document.getElementById("b").value = '';
+		document.getElementById("resultado").value = '';
+		}
+	</script>
+</head>
+<body>
+	<table border="1" border>
+	<tr>
+		<th colspan="4">Calculadora</th>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<input type="text" id="a" placeholder="Escreva um número"/>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<input type="text" id="b" placeholder="Escreva um número"/>
+		</td>
+	</tr>
+	<tr>
+		<td><button onclick="add()">+</button></td>
+		<td><button onclick="sub()">-</button></td>
+		<td><button onclick="mult()">*</button></td>
+		<td><button onclick="div()">/</button></td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<input id="resultado" readonly="true" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+		<button onclick="limpa()">limpar</button>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>
