@@ -5,8 +5,11 @@
 	</head>
 	<body>
 		<p>Testando</p>
-		<button onclick="cliqueBotao()">Clique Aqui!</button>
-		
+		<button onclick="cliqueBotao()">Clique Aqui!</button></br></br>
+		<input type="text" id="idade" value="18"></input> 
+		<button onclick="avaliarIdade(document.getElementById('idade').value)">Verificar idade</button></br></br>
+		<button onclick="alert(diaSemana())">Dia da Semana</button></br></br>
+		<button onclick="alert(diaMes())">Dia do Mês</button>		
 		<script>
 			//Aqui deve-se importar os scripts da página
 			//Comentário de uma linha
@@ -15,12 +18,65 @@
 			Comentário de múltiplas linhas
 			Linha 2 de comentário
 			*/
-			document.write(5 + "B" +6);
+			//document.write(5 + "B" +6);
+			
+			function avaliarIdade(idade){
+				idade = parseInt(idade);
+				var mensagem = "";
+				if(idade >= 16){
+					mensagem = "Você pode votar";
+				}else{
+					mensagem = "Você ainda não pode votar";
+				}
+				window.alert(mensagem);
+			}
+			
+			function diaSemana(){
+				var dia = "";
+				switch (new Date().getDay()) {
+					case 0:
+						dia = "Domingo";
+						break;
+					case 1:
+						 dia = "Segunda";
+						 break;
+					case 2:
+						 dia = "Terça";
+						 break;
+					case 3:
+						 dia = "Quarta";
+						 break;
+					case 4:
+						dia = "Quinta";
+						break;
+					case 5:
+						 dia = "Sexta";
+						 break;
+					case 6:
+						dia = "Sábado";
+						break;
+					default:
+						dia = "Data inválida";
+					break;
+				}
+				return dia;
+			}
+			
+			function diaMes(){
+				var mes = new Date().getMonth();
+				var vet = {0:'Janeiro', 1:'Fevereiro', 2:'Março', 3:'Abril', 4:'Maio', 5:'Junho', 6:'Julho', 7:'Agosto', 8:'Setembro', 9:'Outubro', 10:'Novembro', 11:'Dezembro'};
+				return vet[mes];
+			}
+			
+			function soma(x, y){
+			 var result = x+y;
+			 return (x+y);
+			}
 			
 			function cliqueBotao(){
 				document.write(5+6);
 				window.alert(5+6);
-				console.log('Testando 5 + 6 = '5+6);
+				console.log('Testando 5 + 6 =', 5+6);
 			}
 		</script>
 		
