@@ -1,0 +1,18 @@
+ <!DOCTYPE html>
+<html>
+	<body>
+	<button onclick="funcaoX()">Clique aqui</button>
+	<p id="teste"></p>
+		<script>
+		function funcaoX() {
+		var pessoa = {nome:"Joao", sobrenome:"Neve", idade:25};
+		var msg = "";
+		var x;
+		for (x in pessoa) {
+		msg += pessoa[x] + " ";
+		}
+		document.getElementById("teste").innerHTML = msg;
+		}
+		</script>
+	</body>
+</html>

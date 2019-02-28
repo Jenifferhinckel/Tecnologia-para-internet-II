@@ -1,0 +1,47 @@
+<!-- -Atividade
+- Declar um array com os meses do ano.
+- Inserir itens usando laço.
+- Exibir meses pares.
+- Excluir meses ímpares.
+- Remover todos os meses e liberar recursos objeto array utilizado.
+-->
+
+<!DOCTYPE html>
+<html>
+	<body>
+	<button onclick="funcao()">HEY</button>
+	<p id="teste">Vetor</p>
+	<p id="teste1">Pares</p>
+	<p id="teste2">Esvaziar</p>
+		<script>
+		function funcao() {
+		var meses = {0:'Janeiro', 1:'Fevereiro', 2:'Março', 3:'Abril', 4:'Maio', 5:'Junho', 6:'Julho', 7:'Agosto', 8:'Setembro', 9:'Outubro', 10:'Novembro', 11:'Dezembro'};
+		var mes = "";
+		var x;
+		for (x in meses) {
+		mes += meses[x] + " ";
+		}
+		document.getElementById("teste").innerHTML = mes;
+		}
+		
+		function funcao() {
+		var meses = {0:'Janeiro', 1:'Fevereiro', 2:'Março', 3:'Abril', 4:'Maio', 5:'Junho', 6:'Julho', 7:'Agosto', 8:'Setembro', 9:'Outubro', 10:'Novembro', 11:'Dezembro'};
+		var mes = "";
+		var x;
+		for (x in meses) {
+		mes += meses[x] + " ";
+		mes = mes.slice(1,1);
+		}
+		document.getElementById("teste1").innerHTML = mes;
+		}
+		
+		function funcao() {
+		var meses = {0:'Janeiro', 1:'Fevereiro', 2:'Março', 3:'Abril', 4:'Maio', 5:'Junho', 6:'Julho', 7:'Agosto', 8:'Setembro', 9:'Outubro', 10:'Novembro', 11:'Dezembro'};
+		var mes = "";
+		var x;
+		while(x )
+		document.getElementById("teste1").innerHTML = mes;
+		}
+		</script>
+	</body>
+</html>
